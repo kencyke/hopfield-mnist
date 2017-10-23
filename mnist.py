@@ -22,7 +22,6 @@ def mnist4hn(n_patterns):
 
 def addnoise(train, error_rate):
     """
-
     Adds random noise to the train data and returns it as the test data.
     Noise is added by flipping the sign of some units with the error rate p.
 
