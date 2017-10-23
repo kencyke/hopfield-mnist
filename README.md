@@ -1,8 +1,5 @@
-# HopfieldNet
+# hopfield-mnist
 
-Some applications of Hopfield Network are deposited in this repository.
-
-## MNIST
 It includes two python files (mnist.py and hopfield4gif.py).
 
 mnist.py implements some functions to get and corrupt [the MNIST data](http://yann.lecun.com/exdb/mnist/) by making use of [scikit-learn](http://scikit-learn.org/stable/).
