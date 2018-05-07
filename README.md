@@ -8,4 +8,4 @@ On the other hand, hopfield4gif.py implements both training and inferring algori
 
 The main function outputs a collection of the reconstructed data (80 png images) parametrized by the bias term. These png images are used to make a gif animation parametrized by the bias term.
 
-<img src=MNIST/anim.gif width=400px>
+<img src=anim.gif width=400px>
