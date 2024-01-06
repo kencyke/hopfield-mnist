@@ -1,11 +1,24 @@
 # hopfield-mnist
 
-It includes two python files (mnist.py and hopfield4gif.py).
+## Usage
 
-mnist.py implements some functions to get and corrupt [the MNIST data](http://yann.lecun.com/exdb/mnist/) by making use of [scikit-learn](http://scikit-learn.org/stable/).
+```bash
+# See mnist data by using matplotlib:
+$ poetry run python mnist.py
+# Generate the prediction data under ./png directory by using hopfield network:
+$ poetry run python hopfield.py
+```
 
-On the other hand, hopfield4gif.py implements both training and inferring algorithms (i.e., outer product construction and synchronous update rule). Given the trained data (i.e., the MNIST handwritten digits) and the bias term, one can determine all parameters of a Hopfield network that reconstructs the trained data from the corrupted data.
+## Sample Result
 
-The main function outputs a collection of the reconstructed data (80 png images) parametrized by the bias term. These png images are used to make a gif animation parametrized by the bias term.
+### Denoise (synchronous update)
+<img src=./png/sync_mnist_image_prediction.png width=400px>
 
-<img src=anim.gif width=400px>
+### Energy transition (synchronous update)
+<img src=png/sync_energy_transition.png width=400px>
+
+### Denoise (asynchronous update)
+<img src=png/async_mnist_image_prediction.png width=400px>
+
+### Energy transition (asynchronous update)
+<img src=png/async_energy_transition.png width=400px>
